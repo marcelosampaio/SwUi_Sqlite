@@ -26,7 +26,7 @@ class DbManager {
             let path: String = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first ?? ""
             
             // database connection
-            db = try! Connection("\(path)/users.db")
+            db = try! Connection("\(path)/corporate.db")
             
             // creating table object
             employees = Table("Employees")
